@@ -31,7 +31,7 @@ class Weather {
 
   String get dateTimeHumanDescription {
     String desc = dateTimeFormatDisplay.format(cityDateTime);
-    if (cityDateTime.millisecondsSinceEpoch != dateTime.toLocal().millisecondsSinceEpoch) {
+    if (city.timezone != dateTime.toLocal().timeZoneOffset.inSeconds) {
       desc += " (${onlyTimeFormatDisplay.format(dateTime.toLocal())} ici)";
     }
     return desc;
