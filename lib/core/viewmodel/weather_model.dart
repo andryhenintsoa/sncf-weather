@@ -30,7 +30,7 @@ class WeatherModel extends BaseModel {
     city = newCity ??
         (prefs.getString("city")) ??
         "Paris";
-    city = city.toUpperCase();
+    city = city.trim().toUpperCase();
 
     prefs.setString("city", city);
 
