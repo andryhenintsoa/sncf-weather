@@ -17,7 +17,7 @@ After cloning the repository, there are few steps to follow to launch the app
 - Update the .env file to follow your configurations. In our app, we have used the API of OpenWeatherMap but you are free to use another one and adapt the code to it
 ```sh
 ENDPOINT=https://api.openweathermap.org
-APPKEY=ec421a389b9aee93fb68ca13484e17ea
+APPKEY=<API key>
 ```
 - Use code generation to generate constructors for the model used
 ```sh
